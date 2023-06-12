@@ -9,20 +9,37 @@ html {
   }
   
   .navbox:hover{background-color:#1f1f1f ;color: #F7F7F7;}
-  .container{padding:8px ; border-radius:4px; max-width:1200px;margin: 100px auto 48px auto ; display:flex;align-items:center;justify-content:center;}
-  .aboutmeleft{flex:1;margin: 0 16px;}
-  .aboutmeright{flex:1;text-align: left;margin: 0 16px;}
+  .container{max-width:1200px; margin: 100px auto 48px auto ; display:flex;align-items:center;justify-content:center;}
+  .aboutmeleft{flex:1;}
+  .aboutmeright{flex:1;text-align: left;margin-left:16px;}
   .aboutmeleft img{max-width:100%;height:auto;}
   
   .title1{text-align:left;}
-  .text{font-size:16px; margin:8px auto 24px auto;line-height:24px;text-align: justify;}
-  .logo{display:flex;justify-content:center;margin-top:8px;}
-  .logo img{padding:24px;}
+  .text{ font-size:16px; margin:8px 0 24px 0;line-height:24px;text-align: justify;}
+  .logo{display:flex;justify-content:space-around;}
+  .logo img{max-width:100%;height:auto;padding: 8px; border-radius: 16px; background-color: #F7F7F7;
+    box-shadow: 4px 4px 4px 1px #c6c6c623, -3px -4px 6px 2px #fffffff6;
+    margin: 8px;
+  }
   
-  @media(max-width:830px){.container {flex-direction:column;}.title1{font-size:24px;text-align:center;margin-top:16px;}.logo img{padding:16px;}
-    }
-  @media(max-width:500px){.container {flex-direction:column;}.title1{font-size:24px;text-align:center;margin-top:16px;}.logo img{padding:8px;}
-    }
+  @media(max-width:1200px){
+    .container {margin:100px 24px 48px 24px;} 
+  }
+  @media(max-width:830px){
+    .container {flex-direction:column;}
+    .title1{font-size:24px;text-align:center;margin-top:16px;}
+    .aboutmeleft{flex:1;}
+    .aboutmeright{flex:1;width: 100%;height: auto; margin-top:16px;margin-left: 0; }
+    .logo{max-width: 100%; justify-content:space-around;}
+  }
+  @media(max-width:500px){
+    .navbar{padding:0px 8px;}
+    .container {flex-direction:column;margin-left: 8px;margin-right: 8px;}
+    .title1{font-size:24px;text-align:center;margin-top:16px;}
+    .logo img{width: 32px;height: auto; padding: 8px;margin:4px;}
+  }
+
+  
   
   .pj{max-width: 1200px; margin:0px auto 32px auto;background-color: #f7f7f7d8;
     box-shadow: 4px 4px 8px #c6c6c623 , -3px -4px 6px #fffffff6;border-radius: 16px;justify-content: center;}
@@ -39,18 +56,24 @@ html {
   .pjleft img:hover,.pjright img:hover{max-width: 100%;height: auto;border-radius:10px;box-shadow:4px 4px 6px 2px #c6c6c6  ;
   }
   
+  @media (max-width: 1200px) {
+    .pj {
+      margin: 0 24px;
+    }}
+    
   @media (max-width: 500px) {
     .container2 {
       flex-direction: column;margin: 0 32px;
     }
     .pjleft, .pjright {
-      width: 100%;margin: 12px 0;
+      width: 100%;margin: 12px 0;}
+    .pj{margin:0px 8px 32px 8px;}
     }
     
-  }
+
   
-  .footer{justify-content:center; background-color:#f7f7f7;text-align:center;padding:16px;color: #1f1f1f;box-shadow:-3px -4px 6px #c6c6c623;}
-  .contactme{max-width:1200px;text-align:left;margin:32px auto;}
+  .footer{justify-content:center; background-color:#f7f7f7;text-align:center;padding:24px;color: #1f1f1f;box-shadow:-3px -4px 6px #c6c6c623;}
+  .contactme{max-width:1200px;justify-content: center; text-align:left;margin:32px 0;}
   .title3{font-size:20px;display:inline;margin:0 auto;}
   .iconby{font-size:12px;border-top:1px solid #e3e3e3;padding:16px 32px 0px 32px;}
   .mail{display:flex;margin:8px 0;}
