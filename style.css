@@ -12,12 +12,12 @@ html {
   .container{max-width:1200px; margin: 100px auto 48px auto ; display:flex;align-items:center;justify-content:center;}
   .aboutmeleft{flex:1;}
   .aboutmeright{flex:1;text-align: left;margin-left:16px;}
-  .aboutmeleft img{max-width:100%;height:auto;}
+  .aboutmeleft img{max-width:100%;height:auto;margin-right: 8px;}
   
   .title1{text-align:left;}
   .text{ font-size:16px; margin:8px 0 24px 0;line-height:24px;text-align: justify;}
   .logo{display:flex;justify-content:space-around;}
-  .logo img{max-width:100%;height:auto;padding: 8px; border-radius: 16px; background-color: #F7F7F7;
+  .logo img{ padding: 8px; border-radius: 16px; background-color: #F7F7F7;
     box-shadow: 4px 4px 4px 1px #c6c6c623, -3px -4px 6px 2px #fffffff6;
     margin: 8px;
   }
@@ -29,6 +29,7 @@ html {
     .container {flex-direction:column;}
     .title1{font-size:24px;text-align:center;margin-top:16px;}
     .aboutmeleft{flex:1;}
+    .aboutmeleft img{margin-right: 0px;}
     .aboutmeright{flex:1;width: 100%;height: auto; margin-top:16px;margin-left: 0; }
     .logo{max-width: 100%; justify-content:space-around;}
   }
