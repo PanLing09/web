@@ -9,7 +9,8 @@ html {
   }
   
   .navbox:hover{background-color:#1f1f1f ;color: #F7F7F7;}
-  .container{max-width:1200px; margin: 100px auto 48px auto ; display:flex;align-items:center;justify-content:center;}
+  .container{max-width:1200px; margin: 100px auto 48px auto ; display:flex;align-items:center;
+    justify-content:center;}
   .aboutmeleft{flex:1;}
   .aboutmeright{flex:1;text-align: left;margin-left:16px;}
   .aboutmeleft img{max-width:100%;height:auto;margin-right: 8px;}
@@ -43,7 +44,8 @@ html {
   
   
   .pj{max-width: 1200px; margin:0px auto 32px auto;background-color: #f7f7f7d8;
-    box-shadow: 4px 4px 8px #c6c6c623 , -3px -4px 6px #fffffff6;border-radius: 16px;justify-content: center;}
+    box-shadow: 4px 4px 4px 1px #c6c6c623, -3px -4px 6px 2px #fffffff6;
+    border-radius: 16px;justify-content: center;}
   
   .title2{max-width: 1200px;justify-content: center;margin:0px auto 0 auto ;padding: 16px;
     text-align: center;border-radius: 0px;}
@@ -54,7 +56,8 @@ html {
     margin-top: 8px;
     text-align: left;
   }
-  .pjleft img:hover,.pjright img:hover{max-width: 100%;height: auto;border-radius:10px;box-shadow:4px 4px 6px 2px #c6c6c6  ;
+  .pjleft img:hover,.pjright img:hover{max-width: 100%;height: auto;border-radius:10px;
+    box-shadow:4px 4px 6px 2px #c6c6c6  ;
   }
   
   @media (max-width: 1200px) {
